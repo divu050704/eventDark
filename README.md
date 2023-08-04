@@ -30,7 +30,7 @@
 ![image](https://github.com/divu050704/ignisAssignment/assets/70474633/673d3906-f3c8-4f23-bdb8-5cb284e785c9)
 
 
-## Installing development environemt
+## Installing development environment 
 ### Backend
 - Edit `backend/ignis/settings.py` to add database credentials of MySQL.
 - Craete database named `ignis` in MySQL.
