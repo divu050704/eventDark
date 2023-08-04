@@ -1,0 +1,86 @@
+body{
+    width: 100%;
+    margin: 0;
+    
+}
+nav{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: #313855;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav > h1{
+    text-align: start;
+    color: #EEA5CF;
+    margin-left: 1rem;
+    text-shadow: 0px 0px #EEA5CF;
+} 
+nav > div > h4{
+    border: none;
+    background-color: #8ebbffcc;
+    color: rgb(32,38,56);
+    padding: 0.5rem;
+    margin-right: 1rem;
+    transition: all 500ms;
+    cursor: pointer;
+}
+.data--card{
+    width: 20rem;
+    padding: 0 0 1rem 0;
+    background-color: #313855;
+    
+    border-radius: 1rem;
+    
+}
+.data--card > img {
+    width: 20rem;
+    height: 12rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.data--card > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem 0 1rem;
+}
+.data--card > div> h4 {
+    color: #8EBBFF;
+    
+}
+.data--card > div >box-icon{
+    cursor: pointer;
+}
+.data--card > font{
+    padding-left: 1rem;
+    color: #616787
+}
+
+.data--card:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    box-shadow:  3.0px 3px 5.9px 	#8EBBFF ;
+}
+.nav-mini{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-mini > h2 {
+    color :#8EBBFF;
+    cursor: pointer;
+}
+.tab-open{
+    border: none;
+    background-color: #8ebbffcc;
+    color: rgb(32,38,56) !important;
+
+    font-size: 1.25rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    transition: all 500ms;
+    cursor: pointer;
+
+}

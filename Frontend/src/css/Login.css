@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    background-color: #23293D;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+   
+    font-family: 'Inter', sans-serif;
+}
+.card{
+    background-color: #313855;
+    padding: 2rem 2.5rem 2rem 2rem;
+    width: 35vw;
+    margin-left: 30%;
+}
+.card > span{
+    font-size: x-large;
+    color: #8EBBFF;
+    line-height: 3rem;
+}
+.card > div > span{
+    font-size: x-large;
+    color: #8EBBFF;
+    line-height: 3rem;
+}
+.Login--inputs{
+    height: 1.5rem;
+    border: none;
+    padding: 0.25rem;
+    color: #8EBBFF;
+    background-color: #8ebbff5d;
+    width: 100%;
+    
+    
+}
+.Login--inputs:focus{
+    outline: 1px solid #8EBBFF;
+    /* outline: none; */
+}
+
+.password--div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > button{
+    border: none;
+    background-color: #8ebbffcc;
+    color: rgb(32,38,56);
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 0.5rem 0 0.5rem 0;
+    transition: all 500ms;
+    cursor: pointer;
+}
+.card > button:hover{
+    background-color: #8EBBFF;
+}
+.login--card-option{
+    color: #8ebbff5d;
+    text-align: center;
+}
+.login--card-option > font{
+    color: #8EBBFF;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .card{
+        width: 70vw;
+    }
+}
