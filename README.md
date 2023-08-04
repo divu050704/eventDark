@@ -24,6 +24,10 @@
 > User tab for second user 
 ![image](https://github.com/divu050704/ignisAssignment/assets/70474633/b44e4c99-836b-4b35-92d6-604013b49fce)
 
+### Like function
+![image](https://github.com/divu050704/ignisAssignment/assets/70474633/bfc76ca9-8444-42f4-92b6-836007aa353c)
+> Comfirmation in database for admin2 (user2)
+![image](https://github.com/divu050704/ignisAssignment/assets/70474633/673d3906-f3c8-4f23-bdb8-5cb284e785c9)
 
 
 ## Installing development environemt
@@ -63,4 +67,22 @@ npm run dev
 
 ## Important Files
 
-### 
+### Frontend
+
+#### jsFiles
+- [App.jsx](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/App.jsx)
+- [Home.jsx](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/components/Home.jsx)
+- [Login.jsx](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/components/Login.jsx)
+- [Upload.jsx](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/components/Upload.jsx)
+
+#### CSS Files
+- [Home.css](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/css/Home.css)
+- [Login.css](https://github.com/divu050704/ignisAssignment/blob/main/Frontend/src/css/Login.css)
+
+
+### Backend
+- [ignis/settings.py](https://github.com/divu050704/ignisAssignment/blob/main/backend/ignis/settings.py)
+- [api/models.py](https://github.com/divu050704/ignisAssignment/blob/main/backend/api/models.py)
+- [api/views.py](https://github.com/divu050704/ignisAssignment/blob/main/backend/api/views.py)
+- [api/urls.py](https://github.com/divu050704/ignisAssignment/blob/main/backend/api/urls.py)
+
