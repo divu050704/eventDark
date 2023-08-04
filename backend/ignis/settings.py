@@ -56,8 +56,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
-
+# all the urls are imported from the urls.py in ignis folder
 ROOT_URLCONF = 'ignis.urls'
+# Setting up cors to allow cookie sessions
 CORS_ORIGIN_ALLOW_ALL = False
 CSRF_TRUSTED_ORIGINS = (
     'http://localhost:5173'
@@ -67,8 +68,9 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:5173',
 
 )
-
+# Cooookies.........
 CORS_ALLOW_CREDENTIALS = True
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -96,7 +98,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ignis',
         'USER': 'root',
-        'PASSWORD': '<REDACTED>',
+        'PASSWORD': '<REDACTED>', # Password redacted for security reasons
         'HOST':'localhost',
         'PORT':'3306',
     }
