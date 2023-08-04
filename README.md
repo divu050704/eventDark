@@ -33,7 +33,7 @@
 ## Installing development environment 
 ### Backend
 - Edit `backend/ignis/settings.py` to add database credentials of MySQL.
-- Craete database named `ignis` in MySQL.
+- Create database named `ignis` in MySQL.
 - Now in `backend/` directory make migrations to the database
 ```console
 python .\manage.py makemigrations 
