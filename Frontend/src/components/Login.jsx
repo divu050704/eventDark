@@ -3,9 +3,11 @@ import "../css/Login.css"
 import "boxicons";
 import getCookie from "../custom/getCookie";
 export default function Login(props) {
+    // If show password is toggled
     const [type, setType] = React.useState("password")
+    // User is wants to login or sign up
     const [status, setStatus] = React.useState(true)
-
+    // Signup submit function
     const signup = () => {
         if (props.creds.uname === "" || props.creds.passwd === "" || props.creds.cpasswd === "") {
             alert("All fields are required")
@@ -24,6 +26,7 @@ export default function Login(props) {
                 .then(res => (res.status === 200 || 201 ? alert("Account Created") : alert("Username taken")))
         }
     }
+    // Login function
     const login = () => {
 
 
