@@ -19,6 +19,8 @@ from django.urls import include,path
 
 
 urlpatterns = [
+    # Allowed admin page
     path('admin/', admin.site.urls),
+    # api/urls.py ---> ignis/urls.py -----> ignis/settings.py
     path('',include('api.urls'))
 ]
