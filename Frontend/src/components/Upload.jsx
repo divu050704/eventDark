@@ -1,14 +1,20 @@
+// Component to add new events to the database
 import React from "react";
 import axios from "axios"
 import getCookie from "../custom/getCookie";
 export default function Upload(props) {
+    // using axios here to upload image 
     axios.defaults.headers.common['X-CSRFTOKEN'] = getCookie("csrftoken");
+    // state to store file
     const [file, setFile] = React.useState("")
+    // state to store other data
     const [data, setData] = React.useState({ event_name: "", data: "", event_time: "", location: "" })
+    // submit the fotm
     const submit = () => {
         if (data.data === "" || data.event_name === "" || data.location === "" || data.event_time === ""){
             alert("All fields are required")
         }
+            // First we will upload the image 'cause we can't send file and data at the same time
         else{
             const url = 'http://localhost:8000/upload_image/';
             const formData = new FormData();
@@ -25,6 +31,7 @@ export default function Upload(props) {
             let new_data;
 
             axios.post(url, formData, config).then((response) => {
+                // id recieved from backend where the image is stored
                 new_data = {...data, id:  response.data.id}
                 const requestOptions = {
                     method: "POST",
